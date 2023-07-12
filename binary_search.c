@@ -32,7 +32,7 @@ void q_sort(int* arr) {
 
 int binary_search(int bottom, int top, int* arr, int finding_value,int* cnt) {
 	int middle = (bottom + top) / 2;
-	if (middle == top) {
+	if (middle == top || middle == bottom) {
 		printf("there's no value of that");
 		return 1;
 	}
